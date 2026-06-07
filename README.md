@@ -186,3 +186,6 @@ backend/
 | 11 | Dashboard Chronological Ordering | Sessions sorted by completion date descending |
 | 12 | Repeat Attempt Preservation | K completions = K records on dashboard |
 | 13 | Guest Session Non-Association | Guest sessions have null userId and calculable results |
+
+## License
+This project is licensed under the MIT License.
