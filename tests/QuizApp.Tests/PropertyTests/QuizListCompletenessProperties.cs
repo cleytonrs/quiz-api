@@ -12,8 +12,6 @@ namespace QuizApp.Tests.PropertyTests;
 /// Property 8: Quiz List Completeness
 /// For any set of quizzes stored in the system, the quiz list endpoint SHALL return all of them,
 /// and each entry SHALL contain the topic name and the correct question count.
-///
-/// **Validates: Requirements 5.1**
 /// </summary>
 [Trait("Feature", "quiz-app")]
 [Trait("Property", "8: Quiz List Completeness")]
@@ -29,8 +27,6 @@ public class QuizListCompletenessProperties
     }
 
     /// <summary>
-    /// **Validates: Requirements 5.1**
-    ///
     /// The quiz list returns the same number of quizzes as stored in the database,
     /// each with the correct topic name and question count.
     /// </summary>

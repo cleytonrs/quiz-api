@@ -12,8 +12,6 @@ namespace QuizApp.Tests.PropertyTests;
 /// For any string shorter than 8 characters used as a password in a registration request,
 /// the system SHALL reject the registration with a validation error.
 /// For any string of 8 or more characters, the password length validation SHALL pass.
-///
-/// Validates: Requirements 7.5
 /// </summary>
 [Trait("Feature", "quiz-app")]
 [Trait("Property", "10: Password Length Validation")]
@@ -22,8 +20,6 @@ public class PasswordValidationProperties
     private readonly RegisterRequestValidator _validator = new();
 
     /// <summary>
-    /// **Validates: Requirements 7.5**
-    ///
     /// Any password shorter than 8 characters must fail the password length validation rule.
     /// </summary>
     [Property(Arbitrary = new[] { typeof(PasswordArbitraries) })]
@@ -44,8 +40,6 @@ public class PasswordValidationProperties
     }
 
     /// <summary>
-    /// **Validates: Requirements 7.5**
-    ///
     /// Any password of 8 or more characters must pass the password length validation rule.
     /// </summary>
     [Property(Arbitrary = new[] { typeof(PasswordArbitraries) })]

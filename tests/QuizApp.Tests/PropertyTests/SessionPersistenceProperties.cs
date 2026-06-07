@@ -13,8 +13,6 @@ namespace QuizApp.Tests.PropertyTests;
 /// Property 4: Answer Persistence Round-Trip
 /// For any valid answer submission (with a valid sessionId, questionId, and selectedAnswerOptionId),
 /// the stored session answer SHALL contain the exact same questionId and selectedAnswerOptionId that were submitted.
-///
-/// **Validates: Requirements 3.3**
 /// </summary>
 [Trait("Feature", "quiz-app")]
 [Trait("Property", "4: Answer Persistence Round-Trip")]
@@ -30,8 +28,6 @@ public class SessionPersistenceProperties
     }
 
     /// <summary>
-    /// **Validates: Requirements 3.3**
-    ///
     /// Submitting an answer via the service persists the exact questionId and selectedAnswerOptionId
     /// that were submitted in the request.
     /// </summary>

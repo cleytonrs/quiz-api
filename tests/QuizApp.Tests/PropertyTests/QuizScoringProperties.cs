@@ -9,16 +9,12 @@ namespace QuizApp.Tests.PropertyTests;
 /// Property 6: Correct Answer Count
 /// For any completed quiz session with a list of session answers, the reported correct
 /// answer count SHALL equal the number of answers in that list where isCorrect is true.
-///
-/// Validates: Requirements 4.2
 /// </summary>
 [Trait("Feature", "quiz-app")]
 [Trait("Property", "6: Correct Answer Count")]
 public class QuizScoringProperties
 {
     /// <summary>
-    /// **Validates: Requirements 4.2**
-    ///
     /// For any list of boolean values representing isCorrect for each answer,
     /// the correct count (computed via LINQ Count where IsCorrect == true)
     /// should equal the count of true values in the input list.
@@ -58,16 +54,12 @@ public record SessionAnswerListInput(bool[] IsCorrectValues);
 /// Property 7: Pass/Fail Threshold Determination
 /// For any completed quiz session with correctAnswers correct out of totalQuestions total,
 /// the pass status SHALL be true if and only if (correctAnswers / totalQuestions) ≥ 0.70.
-///
-/// Validates: Requirements 4.3, 4.4
 /// </summary>
 [Trait("Feature", "quiz-app")]
 [Trait("Property", "7: Pass/Fail Threshold Determination")]
 public class PassFailThresholdProperties
 {
     /// <summary>
-    /// **Validates: Requirements 4.3, 4.4**
-    ///
     /// For any pair (correctAnswers, totalQuestions) where 0 <= correctAnswers <= totalQuestions
     /// and totalQuestions > 0, the pass/fail determination matches:
     /// passed == ((double)correctAnswers / totalQuestions >= 0.70)

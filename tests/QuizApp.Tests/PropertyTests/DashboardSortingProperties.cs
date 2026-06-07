@@ -12,8 +12,6 @@ namespace QuizApp.Tests.PropertyTests;
 /// Property 11: Dashboard Chronological Ordering
 /// For any set of completed quiz sessions belonging to a user, the dashboard response SHALL return them
 /// sorted by completion date in descending order (most recent first).
-///
-/// **Validates: Requirements 8.4**
 /// </summary>
 [Trait("Feature", "quiz-app")]
 [Trait("Property", "11: Dashboard Chronological Ordering")]
@@ -29,8 +27,6 @@ public class DashboardSortingProperties
     }
 
     /// <summary>
-    /// **Validates: Requirements 8.4**
-    ///
     /// For any set of completed sessions with random completion dates,
     /// GetDashboardAsync returns them sorted by CompletedAt descending (most recent first).
     /// </summary>

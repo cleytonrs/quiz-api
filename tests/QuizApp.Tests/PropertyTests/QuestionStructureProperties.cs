@@ -10,16 +10,12 @@ namespace QuizApp.Tests.PropertyTests;
 /// Property 1: Question Structure Invariant
 /// For any question in the system, it SHALL have exactly four answer options,
 /// and exactly one of those options SHALL be marked as correct.
-///
-/// Validates: Requirements 2.3, 10.2
 /// </summary>
 [Trait("Feature", "quiz-app")]
 [Trait("Property", "1: Question Structure Invariant")]
 public class QuestionStructureProperties
 {
     /// <summary>
-    /// **Validates: Requirements 2.3, 10.2**
-    ///
     /// A question with exactly 4 answer options and exactly 1 correct answer
     /// must pass validation (no validation errors).
     /// </summary>
@@ -33,8 +29,6 @@ public class QuestionStructureProperties
     }
 
     /// <summary>
-    /// **Validates: Requirements 2.3, 10.2**
-    ///
     /// A question with a number of answer options other than 4 must fail validation
     /// with an error about the answer options count.
     /// </summary>
@@ -65,8 +59,6 @@ public class QuestionStructureProperties
     }
 
     /// <summary>
-    /// **Validates: Requirements 2.3, 10.2**
-    ///
     /// A question with exactly 4 options but not exactly 1 correct answer must fail
     /// validation with an error about the correct answer count.
     /// </summary>

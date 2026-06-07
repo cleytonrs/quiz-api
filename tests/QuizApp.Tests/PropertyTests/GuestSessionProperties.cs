@@ -13,8 +13,6 @@ namespace QuizApp.Tests.PropertyTests;
 /// Property 13: Guest Session Non-Association
 /// For any quiz session completed without authentication, the session record SHALL have a null userId,
 /// and the quiz result SHALL still be calculable and returnable to the client.
-///
-/// **Validates: Requirements 11.3**
 /// </summary>
 [Trait("Feature", "quiz-app")]
 [Trait("Property", "13: Guest Session Non-Association")]
@@ -30,8 +28,6 @@ public class GuestSessionProperties
     }
 
     /// <summary>
-    /// **Validates: Requirements 11.3**
-    ///
     /// Starting a session with null userId (guest) and completing it should:
     /// 1. Store the session with null UserId
     /// 2. Still produce a valid QuizResultDto with correct data

@@ -8,16 +8,12 @@ namespace QuizApp.Tests.PropertyTests;
 /// Property 5: Elapsed Time Calculation
 /// For any completed quiz session with start time S and completion time E (where E > S),
 /// the reported elapsed time SHALL equal the difference E - S in seconds.
-///
-/// Validates: Requirements 4.1
 /// </summary>
 [Trait("Feature", "quiz-app")]
 [Trait("Property", "5: Elapsed Time Calculation")]
 public class ElapsedTimeProperties
 {
     /// <summary>
-    /// **Validates: Requirements 4.1**
-    ///
     /// For any pair of DateTimes (startTime, completionTime) where completionTime > startTime,
     /// the elapsed time in seconds equals (completionTime - startTime).TotalSeconds.
     /// This mirrors the logic in QuizSessionService.CompleteSessionAsync.
@@ -37,8 +33,6 @@ public class ElapsedTimeProperties
     }
 
     /// <summary>
-    /// **Validates: Requirements 4.1**
-    ///
     /// For any pair of DateTimes where completionTime > startTime,
     /// the elapsed time must always be positive.
     /// </summary>

@@ -12,8 +12,6 @@ namespace QuizApp.Tests.PropertyTests;
 /// Property 12: Repeat Attempt Preservation
 /// For any user who completes a quiz K times (K ≥ 1), the system SHALL store exactly K separate
 /// session records, and the dashboard SHALL display all K attempts for that quiz.
-///
-/// **Validates: Requirements 9.2, 9.3**
 /// </summary>
 [Trait("Feature", "quiz-app")]
 [Trait("Property", "12: Repeat Attempt Preservation")]
@@ -29,8 +27,6 @@ public class RepeatAttemptProperties
     }
 
     /// <summary>
-    /// **Validates: Requirements 9.2, 9.3**
-    ///
     /// For any user who completes a quiz K times (K randomly generated between 1 and 10),
     /// GetDashboardAsync returns exactly K sessions for that quiz.
     /// All repeat attempts are preserved and visible on the dashboard.
