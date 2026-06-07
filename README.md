@@ -188,4 +188,5 @@ backend/
 | 13 | Guest Session Non-Association | Guest sessions have null userId and calculable results |
 
 ## License
+
 This project is licensed under the MIT License.
